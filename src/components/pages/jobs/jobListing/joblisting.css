@@ -1,0 +1,121 @@
+.filter-main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filter-container{
+    background-color: var(--lightgray);
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.filter-result-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--lightgray);
+    padding: 15px;
+    height: 40px;
+}
+
+.filter-result{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.clear-result {
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+    color: var(--green);
+}
+
+.result-label{
+    background-color: var(--white);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.dropdowns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:20px
+}
+
+.department{
+    display: flex;
+}
+
+.department-title{
+    text-align: start;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 45px;
+}
+
+.department-underline{
+    background-color: var(--blue);
+    margin-bottom: 20px;
+    padding: 3px;
+    width: 80px;
+}
+
+.job{
+    margin-bottom: 30px;
+}
+
+.job-title{
+    text-align: start;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.job-details-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.job-details{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+
+.lable {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.lable-icon{
+    display: flex;
+    align-items: center;
+}
+
+.type {
+    background-color: var(--gray);
+    padding: 4px 10px 4px 10px;
+    border-radius: 4px;
+    color: var(--darkgray);
+    font-weight: 600;
+}
+
+.button-section {
+    display: flex;
+    gap: 50px;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 8px;
+}
