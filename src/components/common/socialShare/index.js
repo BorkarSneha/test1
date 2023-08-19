@@ -1,33 +1,32 @@
-import { FacebookShareButton, LinkedinShareButton, TwitterShareButton} from 'react-share';
+import { FacebookShareButton, LinkedinShareButton, TwitterShareButton } from 'react-share';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 
 import "./socialshare.css"
 
-function SocialShare (props) {
-  return (
+const SocialShare = ({ hostedUrl, title }) =>
+(
     <div className="social-section">
-       <FacebookShareButton 
-            url={props?.details?.hostedUrl}
-            title={props?.details?.title}
+        <FacebookShareButton
+            url={hostedUrl}
+            title={title}
         >
-            <div className="social-icon"><FacebookIcon fontSize="large"/></div>
+            <div className="social-icon"><FacebookIcon fontSize="large" /></div>
         </FacebookShareButton>
-        <LinkedinShareButton 
-            url={props?.details?.hostedUrl}
-            title={props?.details?.title}
+        <LinkedinShareButton
+            url={hostedUrl}
+            title={title}
         >
-            <div className="social-icon"><LinkedInIcon fontSize="large"/></div>
+            <div className="social-icon"><LinkedInIcon fontSize="large" /></div>
         </LinkedinShareButton>
-        <TwitterShareButton 
-            url={props?.details?.hostedUrl}
-            title={props?.details?.title}
+        <TwitterShareButton
+            url={hostedUrl}
+            title={title}
         >
-            <div className="social-icon"><TwitterIcon fontSize="large"/></div>
+            <div className="social-icon"><TwitterIcon fontSize="large" /></div>
         </TwitterShareButton>
     </div>
-  )
-}
+)
 
 export default SocialShare;

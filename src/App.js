@@ -1,17 +1,10 @@
-import './App.css';
-import JobListing from "./components/pages/jobs/jobListing"
-import JobDetails from './components/pages/jobs/jobDetails';
-import { Routes, Route} from "react-router-dom"
+import Router from "./routes"
+import "./App.css"
 
-function App() {
-  return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<JobListing />} />
-        <Route path="/jobs/:id" element={<JobDetails />} />
-      </Routes>
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    <Router />
+  </div>
+)
 
 export default App;
